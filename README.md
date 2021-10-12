@@ -1,6 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/gtns2q1irb80dcm3/branch/master?svg=true)](https://ci.appveyor.com/project/Sergius92739/ahj-8-2-sse-ws-frontend/branch/master)
 
-#### Deployment:  <a href="">Github Pages</a>
+#### Deployment:  <a href="https://sergius92739.github.io/ahj-8.2-sse-ws_frontend/">Github Pages</a>
 
 #### Backend:  <a href="https://github.com/Sergius92739/ahj-8.2-sse-ws_backend">Repository</a>
 
