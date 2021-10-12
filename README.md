@@ -2,9 +2,9 @@
 
 #### Deployment:  <a href="">Github Pages</a>
 
-#### Backend:  <a href="">Repository</a>
+#### Backend:  <a href="https://github.com/Sergius92739/ahj-8.2-sse-ws_backend">Repository</a>
 
-#### Server:  <a href="">Heroku</a>
+#### Server:  <a href="https://ahj-8-2-sse-ws-sergius.herokuapp.com/">Heroku</a>
 
 ---
 
