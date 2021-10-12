@@ -1,0 +1,147 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "null.scss";
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.d_none {
+  display: none;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  // background-color: $neutral-regular;
+  background-image: url('../images/bg1.jpg');
+  padding: 30px;
+  &__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+  }
+  &__column {
+    padding: 20px;
+    width: 49%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    // background-color: white;
+    background-color: $neutral-placeholder;
+    box-shadow: $b-sh-base;
+    .column__title {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 10px;
+    }
+    .column__items {
+      height: 72vh;
+      overflow: auto;
+      padding: 10px;
+    }
+  }
+}
+
+.column__item {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  box-shadow: $b_sh-light;
+  &:nth-child(n + 2) {
+    margin-top: 15px;
+  }
+  .item__status,
+  .item__actions {
+    margin-top: 15px;
+  }
+  .item-id__id {
+    margin-left: 73px;
+  }
+  .item-actions__btn.remove {
+    margin-left: 15px;
+  }
+  .item-status__state {
+    margin-left: 20px;
+  }
+  .item-status__indicator {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-bottom: -2px;
+    margin-left: 30px;
+    &.running {
+      background-color: rgb(3, 192, 3);
+      box-shadow: $b_sh-light;
+    }
+  }
+  .item-actions__btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    margin-bottom: -5px;
+    
+    &.start {
+      background-image: url("../images/play_button.png");
+      margin-left: 15px;
+    }
+    &.remove {
+      background-image: url("../images/delete_btn.svg");
+    }
+    &.stop {
+      background-image: url("../images/pause_btn.png");
+      margin-left: 14px;
+    }
+  }
+}
+
+.column__point {
+  line-height: 1.2;
+  font-size: 1.2rem;
+  font-weight: 500;
+  &:nth-child(n + 2) {
+    margin-top: 30px;
+  }
+  .piont-id__id {
+    margin-left: 10px;
+    color: rgb(4, 155, 4);
+  }
+  .point-info__info {
+    margin-left: 24px;
+    color: rgb(4, 155, 4);
+  }
+  .point__date {
+    color: rgb(0, 141, 177);
+  }
+  .point-id__text {
+    display: inline-block;
+    margin-top: 5px;
+  }
+}
+
+.column__link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.4rem;
+}

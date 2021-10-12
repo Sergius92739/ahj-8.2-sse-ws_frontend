@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <div id="root">
+    <div class="page">
+      <div class="page__body">
+        <div class="page__column">
+          <h3 class="column__title">Your micro instances:</h3>
+          <ul data-name="instances" class="column__items"></ul>
+          <div class="column__link">
+            <a data-name="created" href="" class="link">Create new instance</a>
+          </div>
+        </div>
+        <div class="page__column">
+          <h3 class="column__title">Worklog:</h3>
+          <ul data-name="worklog" class="column__items"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
