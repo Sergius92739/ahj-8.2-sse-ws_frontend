@@ -10,8 +10,8 @@ export default class InstancesHandler {
     this.worklog = this.container.querySelector('[data-name="worklog"]');
     this.instances = this.container.querySelector('[data-name="instances"]');
     this.creatInstanceBtn = this.container.querySelector('.link');
-    this.api = new Api('https://ahj-8-2-sse-ws-sergius.herokuapp.com');
-    this.sse = new EventSource('https://ahj-8-2-sse-ws-sergius.herokuapp.com/sse');
+    this.api = new Api('https://ahj-8-2-sse-ws-backend.onrender.com');
+    this.sse = new EventSource('https://ahj-8-2-sse-ws-backend.onrender.com/sse');
     this.intervals = new Map();
 
     this.getSseData = this.getSseData.bind(this);
